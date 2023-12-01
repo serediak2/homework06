@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form">
+            <div class="container">
+                <form action="/action_page.php" target="_self">
+                    <div class="form__input">
+                        <label for="full-name">Повне імʼя</label>
+                        <input type="text" id="full-name">
+                    </div>
+
+                    <div class="form__inut">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="form__input">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password">
+                    </div>
+                    
+                    <div class="form__input">
+                        <label for="password-again">Пароль ще раз</label>
+                        <input type="password" id="password-again">
+                    </div>
+
+                    <div class="form__gender">
+                        <label for="radio">Стать</label>
+                        <input type="radio" id="gender" name="gender" value="чоловіча">
+                        <label for="gender">чоловіча</label>
+                        <input type="radio" id="gender" name="gender" value="жіноча">
+                        <label for="gender">жіноча</label>
+                    </div>
+
+                    <div class="form__input">
+                        <label for="age">Вік</label>
+                        <input type="number" id="age">
+                    </div>
+
+                    <div class="form__course">
+                        <label for="course">Курс</label>
+                        <select name="course" id="course" size="1">
+                            <option value="choose">-Виберіть курс=-</option>
+                            <option value="java-script">Java Script</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+
+                    <div form__address>
+                        <label for="address">Повна адреса</label>
+                        <textarea name="address" id="address" cols="20" rows="3">
+                            Країна, регіон, місто/ селище, вулиця
+                        </textarea>
+                    </div>
+                    <div class="form__agree">
+                        <input type="radio" id="agree" name="agree" value="agree">
+                        <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+                    </div>
+
+                    <div class="form__reset-submit">
+                        <input type="reset" value="Очистити форму">
+                        <input type="submit" value="Зареєструватися">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
